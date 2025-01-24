@@ -33,15 +33,14 @@ public class JobApplication
     {
         return applicationDate;
     }
-
-    public void setApplicationDate(String applicationDate) {
+    public void setApplicationDate(String applicationDate)
+        {
         this.applicationDate = applicationDate;
     }
-
-    public String getApplicationStatus() {
+    public String getApplicationStatus()
+        {
         return applicationStatus;
     }
-
     public void setApplicationStatus(String applicationStatus)
         {
         this.applicationStatus = applicationStatus;
@@ -51,7 +50,8 @@ public class JobApplication
         {
         return "Company: " + companyName + ", Job Title: " + jobTitle + ", Date: " + applicationDate + ", Status: " + applicationStatus;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args)
+        {
         JobApplication application = new JobApplication("AROMA BRAND SOLITIONS", "Software Engineer", "2024-12-20", "Applied");
         System.out.println(application);
     }
